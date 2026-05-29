@@ -1,31 +1,19 @@
-#!usr/bin/env python3
-# creating the grading system
-student_name = input("\n Enter your name: ")
-print("\n {student_name}")
-print("\n =========== Student Result===========")
-while True:
-    print("\n {student_name}")
-    student_number_subject = int(input("\n Enter the number of subjects: "))
-    print("\n {student_number_subject}")
-    total_marks = 0
-    total_points = 0
+import random
+name = input("Enter your name: ")
+print(f"my name is {name} and a filling the numbers")
+def positive_number(n):
+    steps = 0 
+    while n != 1 :
+        if n % 2 == 0: #even
+            print(n, "is even, Divide by 2 again", (n / 2))
+            n = int(n / 2)
+    else:
+        print(n, "is odd number, so i divide 3n + 1", (3 * n + 1))
+        n = int(3 * n + 1)
+    steps += 1
+    print("1")
+    print("Total steps:", steps)
 
-    # getting the lists of the subject and marks
-    subject = []
-    marks_lists = []
-    grades = []
-    points_lists = []
-
-    #functions to calculate grades and marks
-    def calculate_grades(marks):
-        if marks > 100:
-            print("\n Invalid Marks")
-        elif marks >= 70:
-            print("A", 12)
-        elif marks >= 60 and <= 69:
-            print("B", 10)
-
-
-        
-
-    
+    # finding the calculations 
+num = int(input("Enter a number: "))
+positive_number(num)

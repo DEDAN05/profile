@@ -35,7 +35,7 @@ while True:
 
     selected = menu[choice - 1]
 
-    client_quantity = int(input("Enter quantity: "))
+    client_quantity = float(input("Enter quantity: "))
 
     total = selected["price"] * client_quantity
 
@@ -64,3 +64,5 @@ print("\n------ RECEIPT ------")
 print("Total Bill: Ksh", grand_total)
 print("Amount Paid: Ksh", amount_paid)
 print("Change: Ksh", change)
+print("*" * 40)
+print("\nThank you for dining with us at GOLDEN TULIP RESTAURANT!")
